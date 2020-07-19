@@ -23,7 +23,8 @@ jobs:
           pip install -r requirements.txt
           
           # Pull dataset with DVC 
-          dvc pull data
+          # dvc pull data - not working as of now
+          python get_data.py
           
           # Reproduce pipeline if any changes detected in dependencies
           dvc repro 
